@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Monument House Cleaning ™</title>
+
+    <meta name="description" content="Monument House Cleaning ™ provides five star house-cleaning and maid services in Monument, Colorado and nearby communities. Book your cleaning today.">
+    <meta name="keywords" content="monument house cleaning, house cleaning monument, house cleaning monument colorado">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="og:site_name" content="Monument House Cleaning ™">
+    <meta property="og:title" content="Monument House Cleaning ™">
+
+    <style>
+        :root{
+            --accent:#0e74b5;
+            --accent-dark:#0a5c90;
+            --overlay:rgba(0,0,0,.55);
+            --shadow:0 10px 30px rgba(0,0,0,.18);
+            --max:1100px;
+            --text:#222;
+            --muted:#7d7d7d;
+            --soft:#f5f5f7;
+        }
+
+        /* Base */
+        *{box-sizing:border-box}
+        body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;color:var(--text);background:#fff}
+        a{color:var(--accent);text-decoration:none}
+        a:hover{color:#094e7d;text-decoration:underline}
+
+        /* Simple container feel without changing markup */
+        header, section{padding:32px 20px}
+        .intro h2, .why-us h2, .services h2, .residential h2, .move-out h2, .about h2, .reviews h2{
+            font-size:34px;margin:0 0 18px;text-align:center
+        }
+        .intro p, .residential p, .move-out p, .about p{
+            font-size:20px;max-width:900px;margin:0 auto 14px;color:#444
+        }
+
+        /* Header now uses solid blue color rather than an image */
+        header{
+            color:#fff;text-align:center;padding:84px 20px 36px;
+            background-color:var(--accent);
+        }
+        header h1{font-size:48px;margin:0 0 8px}
+        header p{font-size:20px;margin:6px 0 0}
+        header a{color:#fff;text-decoration:underline}
+        header a:hover{color:#d7ecff}
+
+        /* Lists and bullets */
+        .why-us{background:#fff}
+        .why-us ul{list-style:none;padding:0;margin:0 auto;max-width:1000px;
+            display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 24px}
+        .why-us li{position:relative;padding-left:28px;font-size:18px;color:#444;background:#fff}
+        .why-us li:before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
+
+        /* Achievement badges updated to match header/footer color with white text */
+        .achievements{display:flex;justify-content:center;flex-wrap:wrap;margin-top:22px;gap:16px}
+        .achievement-box{
+            background:var(--accent);
+            color:#fff;
+            padding:18px 20px;
+            text-align:center;
+            border-radius:8px;
+            width:200px;
+            box-shadow:0 8px 22px rgba(0,0,0,.12);
+            transition:transform .15s ease, box-shadow .15s ease;
+        }
+        .achievement-box:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.18)}
+        .achievement-box p{font-size:16px;margin:0}
+
+        /* Services section polish */
+        .services{background:#fff}
+        .services p{max-width:900px;margin:0 auto 14px;color:#444;font-size:20px}
+        .services ul{list-style:none;padding:0;margin:10px auto 8px;max-width:900px;
+            display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px 20px}
+        .services li{position:relative;padding-left:28px}
+        .services li:before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
+
+        /* Image polish */
+        .image-container{display:flex;justify-content:center;margin:22px 0}
+        .image-container img{max-width:100%;height:auto;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.12);display:block}
+
+        /* Reviews as soft quote cards */
+        .reviews{background:#fff}
+        .review{
+            background:var(--soft);padding:20px;margin:0 auto 18px;border-radius:10px;
+            box-shadow:0 6px 16px rgba(0,0,0,.08);max-width:900px
+        }
+        .review .stars{color:#ffc107;font-size:22px;margin-bottom:8px}
+        .review p{margin:0;color:#333}
+
+        /* About section */
+        .about{background:#f4f4f4}
+        .about p{color:#444}
+
+        /* CTA panel now uses solid blue color rather than an image */
+        .cta{
+            color:#fff;text-align:center;padding:84px 20px;
+            background-color:var(--accent);
+        }
+        .cta a{
+            display:inline-block;background:rgba(0,0,0,.55);color:#fff;text-decoration:none;
+            padding:28px 28px 16px;border-radius:8px;box-shadow:var(--shadow);font-weight:700
+        }
+        .cta h2{font-size:42px;margin:0 0 12px}
+        .cta p{font-size:20px;margin:6px 0}
+        .cta a:hover{filter:brightness(1.05);transform:translateY(-1px);text-decoration:none}
+
+        /* Footer */
+        footer{background:#f4f4f4;text-align:center;padding:22px;color:#555}
+        footer p{margin:0;font-size:16px}
+
+        /* Responsive tweaks */
+        @media (max-width:1024px){
+            header{padding:72px 20px 32px}
+            .intro h2, .why-us h2, .services h2, .residential h2, .move-out h2, .about h2, .reviews h2{font-size:30px}
+            .cta h2{font-size:36px}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>Monument House Cleaning ™</h1>
+        <p>719-634-1139</p>
+        <p>Brought to you by <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a></p>
+    </header>
+
+    <!-- ===== INTRO ===== -->
+    <section class="intro">
+        <h2>Affordable Home Cleaning and Maid Services in Monument, Colorado Since 1987</h2>
+        <p><strong>Monument House Cleaning ™ has supported Colorado households with spotless homes for more than thirty years.</strong> Our crews are trusted across Monument, Colorado and throughout Front Range communities. As a local team, we provide reliable house-cleaning and maid service from the south end of Colorado Springs up to South Denver, CO, including Monument.</p>
+
+        <div class="image-container">
+            <img src="all-rooms-move.jpeg" alt="Professional house cleaner sanitizing a countertop in a Monument home." style="max-width: 600px;">
+        </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section class="why-us">
+        <h2>Why Choose Monument House Cleaning ™</h2>
+        <ul>
+            <li>Our <strong>record of dependability</strong> covers 35 plus years serving Monument Colorado and nearby towns.</li>
+            <li>We are a division of <strong>Colorado Springs House Cleaning</strong>, a brand homeowners already know and trust.</li>
+            <li>We avoid last minute cancellations and stay <strong>on time, efficient, and consistent</strong>.</li>
+            <li>A <strong>community minded company</strong> committed to doing the right thing every time.</li>
+            <li>Every team member passes thorough background checks for your <strong>safety and peace of mind</strong>.</li>
+            <li>We handle all <strong>employment and tax details</strong> so you skip the paperwork.</li>
+            <li>Cleaning plans are <strong>tailored to you</strong> from light upkeep to detailed housekeeping.</li>
+        </ul>
+
+        <div class="achievements">
+            <div class="achievement-box"><p>35+ Years in Business</p></div>
+            <div class="achievement-box"><p>100,000+ Cleanings Completed</p></div>
+            <div class="achievement-box"><p>95%+ Client Satisfaction</p></div>
+            <div class="achievement-box"><p>10,000+ Happy Customers</p></div>
+            <div class="achievement-box"><p>A+ BBB Accreditation</p></div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services">
+        <h2>Our Cleaning Services</h2>
+        <p>Select from a <strong>full range of residential cleaning choices</strong>, including:</p>
+        <ul>
+            <li>Recurring maid service (weekly, bi-weekly, tri-weekly, monthly)</li>
+            <li>One time cleanings or special event cleanups</li>
+            <li>Seasonal deep cleaning or spring refresh</li>
+            <li>Move-in and move-out cleaning</li>
+            <li>Small office janitorial service</li>
+            <li>Post remodel dust and debris cleanup</li>
+            <li>Packing and unpacking help</li>
+            <li>Party setup and breakdown support</li>
+            <li>and much more!</li>
+        </ul>
+        <p>Visit <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a> for a <strong>free estimate</strong> or to design a plan that fits your exact needs.</p>
+
+        <div class="image-container">
+            <img src="kitchen-move.jpg" alt="Sparkling kitchen after a professional Monument house cleaning." style="max-width: 600px;">
+        </div>
+    </section>
+
+    <!-- ===== RESIDENTIAL ===== -->
+    <section class="residential">
+        <h2>Residential Cleaning Pros</h2>
+        <p>Let Monument House Cleaning ™ take care of deep cleans, seasonal refreshes, and routine maintenance while you enjoy life in Monument, Colorado. We deliver quality results at a fair price, and we stand behind our work. Request a no obligation quote anytime at <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a>.</p>
+        <p>We can visit <strong>daily, weekly, twice per month, monthly, or only when you call</strong>. Need move-in help or post construction cleanup? We have completed those projects successfully for 35 years and counting.</p>
+        <p>Our staff are <strong>courteous, punctual, and fully trained</strong>. See why Monument, Colorado neighbors keep sending referrals, and get your free estimate today at <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a>.</p>
+
+        <div class="image-container">
+            <img src="every-room.jpg" alt="Cleaner polishing a kitchen counter in a Monument CO residence." style="max-width: 600px;">
+        </div>
+    </section>
+
+    <!-- ===== MOVE IN / MOVE OUT ===== -->
+    <section class="move-out">
+        <h2>Move Out and Move In Cleaning</h2>
+        <p>We provide <strong>specialized move out and move in cleanings</strong> throughout Monument, CO and surrounding communities. For professional service and clear pricing, visit <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a>.</p>
+        <p>Homeowners and real estate agents often call us Monument's <strong>top choice for move out cleaning</strong>. From end of lease detail to final build dust removal, we handle every task so you can focus on your move.</p>
+        <p><strong>Moving is stressful enough.</strong> Our experienced crews complete the cleaning checklist while you get settled. We understand what landlords, buyers, and inspectors expect to see.</p>
+        <p>Need help with <strong>packing or unpacking</strong> as well? We have specialists ready to assist. Tell us what you need at <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a>.</p>
+
+        <div class="image-container">
+            <img src="move-out-cleaning.png" alt="Boxes and supplies prepared for a move out cleaning in Monument CO." style="max-width: 600px;">
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about">
+        <h2>About Our Company</h2>
+        <p><strong>Monument House Cleaning ™ has helped Monument CO residents enjoy clean and comfortable homes since 1987.</strong> Our efficient methods and honest pricing give you time back for what matters most.</p>
+        <p>Every household is different, so we build <strong>custom cleaning plans</strong>. Ask for your free quote at <a href="https://www.coloradospringshousecleaning.com">ColoradoSpringsHouseCleaning.com</a> and we will go over the details together.</p>
+        <p>Your <strong>security is a priority</strong>. Each cleaner passes a rigorous background check at hire and again every three months.</p>
+        <p><strong>Customer happiness is our focus.</strong> Share feedback anytime. We resolve issues quickly and say thanks for word of mouth referrals with a $20 discount or a $20 gift certificate for your friend.</p>
+        <p>We are a <strong>local, owner operated business</strong>, not a national franchise. We are fully licensed, bonded, and insured, and we stand behind every cleaning and every employee.</p>
+
+        <div class="image-container">
+            <img src="cleaning-pro.png" alt="Friendly cleaning professional giving an OK sign in Monument, CO." style="max-width: 600px;">
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS  ===== -->
+    <section class="reviews">
+        <h2>Some of Our Reviews</h2>
+
+        <div class="review">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p><strong>Carol T.</strong></p>
+            <p>Team was thorough. Floors were well done. Respectful of my work time and good with the dogs.</p>
+        </div>
+        <div class="review">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p><strong>Rhonda W.</strong></p>
+            <p>The team did a terrific job this week! I always love having such a clean house after they work on it.</p>
+        </div>
+        <div class="review">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p><strong>Kevin S.</strong></p>
+            <p>Always a pleasure to have your professional staff here. Your professional and friendly staff is very much appreciated.</p>
+        </div>
+        <div class="review">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p><strong>Michalan M.</strong></p>
+            <p>Just want to say the crew did a fabulous job! Thank you! I would love for them to come back in a month to do another clean on a monthly bases.</p>
+        </div>
+        <div class="review">
+            <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p><strong>Maria H.</strong></p>
+            <p>I love this cleaning crew! They were all fantastic, and went above and beyond my expectations. I can't believe how much they accomplished in their small block of time. It would have taken me 2 weeks by myself non-stop to do everything they did. And they were very thorough! Fantastic work!</p>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="cta">
+        <a href="https://www.coloradospringshousecleaning.com">
+            <h2>Request Your Free Estimate Today</h2>
+            <p>Visit ColoradoSpringsHouseCleaning.com for a fast, no obligation quote.</p>
+            <p>Proudly Local Since 1987</p>
+            <p>Serving Monument and nearby areas.</p>
+        </a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Monument House Cleaning ™. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
